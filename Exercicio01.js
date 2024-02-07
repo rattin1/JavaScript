@@ -24,10 +24,10 @@ saldo += 1000;
 console.log("Pix recebido de Felipe Neto (R$1000). Saldo atual:", saldo);
 console.log("___________________________________________________________");
 saldo -= 1050;
-console.log("Pix enviado para Kiko (R$1050). Saldo atual:", saldo);
+console.log("Pix enviado para FUNDO DE GARANTIA (R$1050). Saldo atual:", saldo);
 console.log("___________________________________________________________");
-saldo += 13000;
+saldo += 10000;
 console.log(
-  "Pix recebido de Chavez (R$13000). Saldo atual:",
+  "Pix recebido de Peter Griffin (R$10000). Saldo atual:",
   saldo
 );
