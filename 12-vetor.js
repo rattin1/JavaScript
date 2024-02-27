@@ -69,3 +69,11 @@ console.log("0" + elementoProcurado + " está no índice " + posicao);
 var elementoProcurado = "Tricerátops";
 var posicao = dinos.indexOf(elementoProcurado);
 console.log("0" + elementoProcurado + " está no índice " + posicao);
+
+//criando cópia de array (vetor)
+var copia1 = dinos.slice();
+console.log("Vetor cópia 1");
+console.table(copia1);
+
+var copia2 = dinos.slice(1,3);
+console.table(copia2);
