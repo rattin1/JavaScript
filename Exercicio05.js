@@ -2,7 +2,7 @@ function idade(anoAtual, anoNascimento) {
     return anoAtual - anoNascimento;
 }
 
-console.log(`Messias Bolsonaro tem ${idade(2024, 1988)} anos`);
+console.log(`Jair Bolsonaro tem ${idade(2024, 1988)} anos`);
 
 function tanque(gasosa, km) {
     return gasosa / km;
