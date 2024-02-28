@@ -14,16 +14,16 @@ console.log(
   `O carro consegue andar ${tanque(60, km)} kilometros com 6 litros de gasolina`
 );
 
-// console.log("--------------------------------------");
+console.log("--------------------------------------");
 
-// var adolesecente = 87;
+var adolesecente = 16;
 
-// function vota() {
-//   if (adolesecente > 15) console.log("Pode votar")
-//   else ( adolesecente < 15) console.log("Não pode votar")
-// }
+function vota() {
+  if (adolesecente > 15) console.log("Pode votar")
+  else console.log("Não pode votar")
+}
 
-// vota();
+vota();
 
 console.log("----------------------------------------");
 
