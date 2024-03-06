@@ -29,33 +29,34 @@
 
 // jogada()
 
-var tabu = [
-  [" ", " ", " "],
-  [" ", " ", " "],
-  [" ", " ", " "],
-];
+// var tabu = [
+//   [" ", " ", " "],
+//   [" ", " ", " "],
+//   [" ", " ", " "],
+// ];
 
 
-let jogadorX = "X";
-let jogadorO = "O";
+// let jogadorX = "X";
+// let jogadorO = "O";
 
-function jogar(jogador) {
-  let linha = Math.floor(Math.random() * 3);
-  let coluna = Math.floor(Math.random() * 3);
-  if (tabu[linha][coluna] == " ") tabu[linha][coluna] = jogador;
-  else {
-    jogar(jogador);
-  }
-}
+// function jogar(jogador) {
+//   let linha = Math.floor(Math.random() * 3);
+//   let coluna = Math.floor(Math.random() * 3);
+//   if (tabu[linha][coluna] == " ") tabu[linha][coluna] = jogador;
+//   else {
+//     jogar(jogador);
+//   }
+// }
 
-var quemComeca = Math.random()
+// var quemComeca = Math.random()
 
-if (quemComeca >= 0.5) {
-  jogar(jogadorO);
-}
-else jogar(jogadorX)
+// if (quemComeca >= 0.5) {
+//   jogar(jogadorO);
+// }
+// else jogar(jogadorX)
 
-console.table(tabu);
+// console.table(tabu);
+
 // function jogadona() {
 //   while(true) {
 //     const linha = Math.floor(Math.random() * 3);
@@ -117,11 +118,34 @@ console.table(tabu);
 
 // console.table(tabu);
 
-console.log("Desculpa, eu tentei.")
+const tabuleiro = [
+  [" ", " ", " "],
+  [" ", " ", " "],
+  [" ", " ", " "],
+];
+let jogadorX = Math.random() < 0.5 ? "X" : "O";
+
+function jogar(jogador) {
+  let linha, coluna;
+  do {
+    linha = Math.floor(Math.random() * 3);
+    coluna = Math.floor(Math.random() * 3);
+  } while (tabuleiro[linha][coluna] !== " ");
+
+  tabuleiro[linha][coluna] = jogador;
+}
+
+for (let rodada = 0; rodada < 9; rodada++) {
+  if (jogadorX == "X") {
+    jogar(jogadorX)
+    jogadorX = "0"
+    console.table(tabuleiro);
+  }else{
+    jogar(jogadorX);
+    jogadorX = "X";
+    console.table(tabuleiro);
+  }
+}
 
 
-
-
-
-
-
+console.table(tabuleiro);
