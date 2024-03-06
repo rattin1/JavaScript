@@ -148,4 +148,15 @@ for (let rodada = 0; rodada < 9; rodada++) {
 }
 
 
+switch (true) {
+  case tabuleiro[0][0] == tabuleiro[1][1] &&
+  tabuleiro[1][1] == tabuleiro[2][2] &&
+  tabuleiro[1][1] !== " ":
+  return "";
+
+  default:
+  
+}
+
+
 console.table(tabuleiro);
