@@ -87,19 +87,13 @@ console.log("============================================================")
 // Crie uma função em JavaScript que recebe uma string e retorna uma lista contendo apenas os números encontrados nela.
 
 function extrairNumeros(str) {
-  // Expressão regular que corresponde a qualquer dígito
   const regex = /\d/g;
-
-  // Encontra todos os números na string
   const numeros = str.match(regex);
-
-  // Retorna os números como uma lista
   return numeros;
 }
 
 const string5 = "Olá mundo 123!";
 const numeros5 = extrairNumeros(string5);
-
 console.log(numeros5); // ["1", "2", "3"]
 
 console.log("============================================================")
@@ -109,18 +103,13 @@ console.log("============================================================")
 // Desenvolva uma função em JavaScript que recebe uma frase e retorna uma nova string com a ordem das palavras invertida.
 
 function inverterFrase(frase) {
-  // Divide a frase em palavras
   const palavras = frase.split(" ");
-
-  // Inverte a ordem das palavras
   palavras.reverse();
-
-  // Retorna a frase com as palavras invertidas
   return palavras.join(" ");
 }
+
 const frase1 = "Olá mundo!";
 const fraseInvertida1 = inverterFrase(frase1);
-
 console.log(fraseInvertida1); // "mundo! Olá
 
 
