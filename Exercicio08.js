@@ -71,7 +71,7 @@ function compararStrings(str1, str2) {
 }
 
 const string1 = "Olá mundo!";
-const string2 = "Olá mundo!";
+const string2 = "olá mUndo!";
 
 console.log(compararStrings(string1, string2)); // true
 
